@@ -3,7 +3,7 @@ name: Hexo Deploy
 on:
   push:
     branches:
-      - main
+      - deploy
 
 jobs:
   build:
@@ -33,6 +33,7 @@ jobs:
           git config --global user.email "wsq@doe.com"
           git config --global user.name "wsq"
           npm install hexo-cli -g
+          npm hexo-deployer-git --save
           npm install
 
       - name: Deploy
