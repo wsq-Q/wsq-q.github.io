@@ -13,12 +13,12 @@ menu:
   "归档":
     url: /archives
     icon: fas fa-archive
-  "关于":
-    url: /about
-    icon: fas fa-user-circle
   "导航":
     url: /contact
     icon: fas fa-comments
+  "关于":
+    url: /about
+    icon: fas fa-user-circle
   "友联":
     url: /friends
     icon: fas fa-address-book
