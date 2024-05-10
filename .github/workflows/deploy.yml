@@ -1,4 +1,4 @@
-name: DoubleAm's Blog CI/CD # 脚本 workflow 名称
+name: Q's Blog CI/CD # 脚本 workflow 名称
 
 on:
   push:
@@ -33,16 +33,19 @@ jobs:
       - name: Install Hexo-cli # 安装 Hexo
         run: |
           npm install -g hexo-cli --save
+          npm install hexo-generator-search --save
+          npm i hexo-permalink-pinyin --save
+          npm i --save hexo-wordcount
           echo "install hexo successful"
       - name: Build Blog # 编译创建静态博客文件
         run: |
           hexo clean
           hexo g
           echo "build blog successful"
-      - name: Deploy DoubleAm's Blog # 设置 git 信息并推送静态博客文件
+      - name: Deploy Q's Blog # 设置 git 信息并推送静态博客文件
         run: |
-          git config --global user.name "doubleam"
-          git config --global user.email "admin@biugle.cn"
+          git config --global user.name "Q"
+          git config --global user.email "wangshuaiqiangs@qq.com"
           hexo deploy
 
       - run: echo "Deploy Successful!"
