@@ -99,11 +99,14 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: landscape
-theme: hexo-theme-matery1
+theme: hexo-theme-matery
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
+  repository: git@github.com:wsq-Q/wsq-q.github.io.git
+  branch: main
+
 
 permalink_pinyin:
   enable: true
