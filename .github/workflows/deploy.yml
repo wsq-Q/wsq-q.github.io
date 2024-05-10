@@ -29,6 +29,7 @@ jobs:
       - name: Init Node.js # 安装源代码所需插件
         run: |
           npm install
+          npm install hexo-deployer-git --save
           echo "init node successful"
       - name: Install Hexo-cli # 安装 Hexo
         run: |
