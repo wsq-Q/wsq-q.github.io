@@ -3,7 +3,7 @@ name: Hexo Deploy
 on:
   push:
     branches:
-      - deploy
+      - main
 
 jobs:
   build:
@@ -32,11 +32,18 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "wsq@doe.com"
           git config --global user.name "wsq"
-          npm install hexo-cli -g
-          npm install hexo-deployer-git --save
           npm install
+          npm install hexo-cli -g
+          npm install hexo-generator-search --save
+          npm i hexo-permalink-pinyin --save
+          npm i --save hexo-wordcount
+          npm install hexo-deployer-git --save
+          echo "install hexo successful"
 
       - name: Deploy
         run: |
           hexo clean
+          # hexo g
           hexo deploy
+        with:
+          ref: deploy
