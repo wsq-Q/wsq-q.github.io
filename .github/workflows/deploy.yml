@@ -33,7 +33,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: public
+          publish_dir: public    # source部署目录
+          publish_branch: deploy # 目标部署分支  
           cname: wangshuaiqiang.chat
       - name: Setup Deploy Private Key
         env:
