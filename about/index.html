@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
-<html lang="zh-CN">
+<html lang="zh-CH">
 
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="关于, Q">
+    <meta name="keywords" content="About, Q">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>关于 | Q</title>
+    <title>About | Q</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -123,14 +123,14 @@
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
-      <span>友链</span>
+      <span>友联</span>
     </a>
     
   </li>
   
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
     </a>
   </li>
 </ul>
@@ -226,7 +226,7 @@
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
-			友链
+			友联
 		</a>
           
         </li>
@@ -320,7 +320,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                    
+                    subtitle
                 
             </div>
 
@@ -335,7 +335,9 @@
 
 
 <script>
-    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day.
+    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
 
@@ -352,7 +354,7 @@
                         
 <div class="statis">
     <span class="count"><a href="/">1</a></span>
-    <span class="name">文章</span>
+    <span class="name">Posts</span>
 </div>
 
 
@@ -372,7 +374,7 @@
                                     
 <div class="statis">
     <span class="count"><a href="/">1</a></span>
-    <span class="name">文章</span>
+    <span class="name">Posts</span>
 </div>
 
 
@@ -473,7 +475,7 @@
 
 <div id="postCharts" class="post-charts">
     <div class="title center-align" data-aos="zoom-in-up">
-        <i class="far fa-bar-chart"></i>&nbsp;&nbsp;文章统计图
+        <i class="far fa-bar-chart"></i>&nbsp;&nbsp;Post Charts
     </div>
     <div class="row">
         <div class="chart col s12 m6 l4" data-aos="zoom-in-up">
@@ -500,7 +502,7 @@
 
     let postsOption = {
         title: {
-            text: '文章发布统计图',
+            text: 'Post Publish Chart',
             top: -5,
             x: 'center'
         },
@@ -516,7 +518,7 @@
         },
         series: [
             {
-                name: '文章篇数',
+                name: 'Number of posts',
                 type: 'line',
                 color: ['#6772e5'],
                 data: [0,0,0,0,0,0,0,0,0,0,0,0,1],
@@ -526,17 +528,17 @@
                     data: [{
                         type: 'max',
                         itemStyle: {color: ['#3ecf8e']},
-                        name: '最大值'
+                        name: 'Maximum'
                     }, {
                         type: 'min',
                         itemStyle: {color: ['#fa755a']},
-                        name: '最小值'
+                        name: 'Minimum'
                     }]
                 },
                 markLine: {
                     itemStyle: {color: ['#ab47bc']},
                     data: [
-                        {type: 'average', name: '平均值'}
+                        {type: 'average', name: 'Average'}
                     ]
                 }
             }
@@ -547,7 +549,7 @@
 
     let categoriesOption = {
         title: {
-            text: '文章分类统计图',
+            text: 'Categories Chart',
             top: -4,
             x: 'center'
         },
@@ -557,7 +559,7 @@
         },
         series: [
             {
-                name: '分类',
+                name: 'Categories',
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
@@ -577,7 +579,7 @@
 
     let tagsOption = {
         title: {
-            text: 'TOP10 标签统计图',
+            text: 'TOP10 Tags Chart',
             top: -5,
             x: 'center'
         },
@@ -604,17 +606,17 @@
                     data: [{
                         type: 'max',
                         itemStyle: {color: ['#3ecf8e']},
-                        name: '最大值'
+                        name: 'Maximum'
                     }, {
                         type: 'min',
                         itemStyle: {color: ['#fa755a']},
-                        name: '最小值'
+                        name: 'Minimum'
                     }],
                 },
                 markLine: {
                     itemStyle: {color: ['#ab47bc']},
                     data: [
-                        {type: 'average', name: '平均值'}
+                        {type: 'average', name: 'Average'}
                     ]
                 }
             }
@@ -632,7 +634,7 @@
                 
 <div class="my-projects">
     <div class="title center-align" data-aos="zoom-in-up">
-        <i class="fas fa-gift"></i>&nbsp;&nbsp;我的项目
+        <i class="fas fa-gift"></i>&nbsp;&nbsp;My Projects
     </div>
     <div class="row">
         
@@ -660,7 +662,7 @@
                 
 <div class="my-skills">
     <div class="title center-align" data-aos="zoom-in-up">
-        <i class="fas fa-wrench"></i>&nbsp;&nbsp;我的技能
+        <i class="fas fa-wrench"></i>&nbsp;&nbsp;My Skills
     </div>
     <div class="row">
         
@@ -749,7 +751,7 @@
 
     
     <div class="other-skills chip-container" data-aos="zoom-in-up">
-        <div class="sub-title center-align"><i class="fa fa-book"></i>&nbsp;&nbsp;其他技能</div>
+        <div class="sub-title center-align"><i class="fa fa-book"></i>&nbsp;&nbsp;Other Skills</div>
         <div class="tag-chips center-align">
             
         </div>
@@ -764,7 +766,7 @@
                 
 <div id="myGallery" class="my-gallery">
     <div class="title center-align" data-aos="zoom-in-up">
-        <i class="far fa-image"></i>&nbsp;&nbsp;相册
+        <i class="far fa-image"></i>&nbsp;&nbsp;Gallery
     </div>
     <div class="row">
         
@@ -985,8 +987,8 @@
 <div id="searchModal" class="modal">
     <div class="modal-content">
         <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
                    class="search-input">
         </div>
         <div id="searchResult"></div>
@@ -1125,6 +1127,34 @@ $(function () {
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
+    
+        <script src="//code.tidio.co/.js"></script>
+        <script>
+            $(document).ready(function () {
+                setInterval(change_Tidio, 50);
+                function change_Tidio() {
+                    var tidio=$("#tidio-chat iframe");
+                    if(tidio.css("display")=="block"&& $(window).width()>977 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"85px":"20px";
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
+                        document.getElementById("tidio-chat-iframe").style.zIndex="998";
+                    }
+                }
+            });
+        </script>
     
 
     

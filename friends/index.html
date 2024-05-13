@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="zh-CN">
+<html lang="zh-CH">
 
 
 <head>
@@ -123,14 +123,14 @@
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
-      <span>友链</span>
+      <span>友联</span>
     </a>
     
   </li>
   
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
     </a>
   </li>
 </ul>
@@ -226,7 +226,7 @@
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
-			友链
+			友联
 		</a>
           
         </li>
@@ -313,7 +313,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                    
+                    subtitle
                 
             </div>
 
@@ -328,7 +328,9 @@
 
 
 <script>
-    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day.
+    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
 
@@ -528,7 +530,7 @@
         <div class="card">
             <div class="card-content">
                 <div class="tag-title center-align">
-                    <i class="fas fa-address-book"></i>&nbsp;&nbsp;友情链接
+                    <i class="fas fa-address-book"></i>&nbsp;&nbsp;Friends
                 </div>
                 <article id="friends-link">
                     
@@ -543,7 +545,7 @@
                                         <img src="http://image.luokangyuan.com/4027734.jpeg" alt="img">
                                         <div>
                                             <h1 class="friend-name">闪烁之狐</h1>
-                                            <p style="position: relative;top: -35px;">编程界大佬，技术牛</p>
+                                            <p style="position: relative;top: -35px;">编程界大佬，技术牛，人还特别好，不懂的都可以请教大佬</p>
                                         </div>
                                     </div>
                                     <div class="friend-button">
@@ -561,7 +563,7 @@
                             <div class="card frind-card2">
                                 <div class="frind-ship">
                                     <div class="title">
-                                        <img src="/" alt="img">
+                                        <img src="https://mehoon.com/" alt="img">
                                         <div>
                                             <h1 class="friend-name">ja_rome</h1>
                                             <p style="position: relative;top: -35px;">不积跬步，无以至千里</p>
@@ -569,27 +571,6 @@
                                     </div>
                                     <div class="friend-button">
                                         <a href="https://mehoon.com/" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            前去学习
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card3">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">ja_rome</h1>
-                                            <p style="position: relative;top: -35px;">编程界佼佼者，不懂的都可以请教大佬</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://www.vdong.xyz/" target="_blank"
                                             class="button button-glow button-rounded button-caution">
                                             前去学习
                                         </a>
@@ -806,8 +787,8 @@
 <div id="searchModal" class="modal">
     <div class="modal-content">
         <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
                    class="search-input">
         </div>
         <div id="searchResult"></div>
@@ -946,6 +927,34 @@ $(function () {
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
+    
+        <script src="//code.tidio.co/.js"></script>
+        <script>
+            $(document).ready(function () {
+                setInterval(change_Tidio, 50);
+                function change_Tidio() {
+                    var tidio=$("#tidio-chat iframe");
+                    if(tidio.css("display")=="block"&& $(window).width()>977 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"85px":"20px";
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
+                        document.getElementById("tidio-chat-iframe").style.zIndex="998";
+                    }
+                }
+            });
+        </script>
     
 
     
