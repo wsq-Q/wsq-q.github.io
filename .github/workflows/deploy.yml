@@ -36,14 +36,15 @@ jobs:
           publish_dir: public    # source部署目录
           publish_branch: deploy # 目标部署分支  
           cname: wangshuaiqiang.chat
-      - name: Setup Deploy Private Key
-        env:
-          HEXO_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
-        run: |
-          mkdir -p ~/.ssh/
-          echo "$HEXO_DEPLOY_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-      - name: Deploy to VPS
-        run: yarn deploy
+
+      #- name: Setup Deploy Private Key
+      #  env:
+      #    HEXO_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
+      #  run: |
+      #    mkdir -p ~/.ssh/
+      #    echo "$HEXO_DEPLOY_KEY" > ~/.ssh/id_rsa
+      #    chmod 600 ~/.ssh/id_rsa
+      #    ssh-keyscan host.com >> ~/.ssh/known_hosts
+      #- name: Deploy to VPS
+      #  run: yarn deploy
 
