@@ -1,7 +1,7 @@
 [{
     "avatar": "http://image.luokangyuan.com/4027734.jpeg",
     "name": "闪烁之狐",
-    "introduction": "编程界大佬，技术牛，人还特别好，不懂的都可以请教大佬",
+    "introduction": "编程界大佬，技术牛",
     "url": "https://blinkfox.github.io/",
     "title": "前去学习"
 }, {
@@ -10,5 +10,13 @@
     "introduction": "不积跬步，无以至千里",
     "url": "https://mehoon.com/",
     "title": "前去学习"
+}, {
+    "avatar": "",
+    "name": "ja_rome",
+    "introduction": "编程界佼佼者，不懂的都可以请教大佬",
+    "url": "https://www.vdong.xyz/",
+    "title": "前去学习"
 }
 ]
+
+

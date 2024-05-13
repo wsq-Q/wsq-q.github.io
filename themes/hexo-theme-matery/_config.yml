@@ -19,7 +19,7 @@ menu:
   "关于":
     url: /about
     icon: fas fa-user-circle
-  "友联":
+  "友链":
     url: /friends
     icon: fas fa-address-book
   # 二级菜单写法如下
