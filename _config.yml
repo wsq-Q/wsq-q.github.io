@@ -45,7 +45,7 @@ relative_link: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
-  enable: true
+  enable: false
   line_number: false
   auto_detect: false
   tab_replace: ''
@@ -107,8 +107,20 @@ deploy:
   repository: git@github.com:wsq-Q/wsq-q.github.io.git
   branch: deploy
 
+search:
+  path: search.xml
+  field: post
 
 permalink_pinyin:
   enable: true
   separator: '-' # default: '-'
   
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
