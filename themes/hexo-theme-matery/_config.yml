@@ -13,9 +13,12 @@ menu:
   "归档":
     url: /archives
     icon: fas fa-archive
-  "导航":
+  "留言板":
     url: /contact
     icon: fas fa-comments
+  "导航":
+    url: /navigation
+    icon: fas fa-location-arrow
   "关于":
     url: /about
     icon: fas fa-user-circle
@@ -45,7 +48,7 @@ time:
   enable: true
   year: 2024 # 年份
   month: 05 # 月份
-  date: 01 # 日期
+  date: 06 # 日期
   hour: 00 # 小时
   minute: 00 # 分钟
   second: 00 # 秒
