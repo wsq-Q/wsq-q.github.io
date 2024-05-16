@@ -103,9 +103,13 @@ theme: hexo-theme-matery
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repository: git@github.com:wsq-Q/wsq-q.github.io.git
-  branch: deploy
+  - type: git
+  - repo:
+      github: git@github.com:wsq-Q/wsq-q.github.io.git
+      # coding: git@e.coding.net:wsq-Q/wsq-Q.git
+      # gitee: git@gitee.com:wsq-Q/wsq-Q.git
+      # gitlab: git@gitlab.com:wsq-Q/wsq-Q.gitlab.io.git
+  - branch: deploy
 
 search:
   path: search.xml

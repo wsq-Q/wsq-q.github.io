@@ -313,9 +313,9 @@ livere:
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: false
-  appId:
-  appKey:
+  enable: true
+  appId: 'V19T3sAdQn0BvC5nb7KjJvkk-gzGzoHsz'
+  appKey: 'ekoDegU8qRR56bjrnVgGwXgX'
   notify: false
   verify: false
   visitor: true
@@ -386,9 +386,10 @@ githubLink:
 # 阅读文章的密码验证功能，如要使用此功能请激活该配置项，并在对应文章的Front-matter中写上'password'的键和加密后的密文即可.
 # 请注意：为了保证密码原文不会被泄露到网页中，文章的密码必须是通过'SHA256'加密的，这样就不会被破解.
 verifyPassword:
-  enable: false
+  enable: true
   promptMessage: 请输入访问本文章的密码
-  errorMessage: 密码错误，将返回主页！
+  errorMessage: 抱歉, 这个密码看着不太对, 请再试试.
+  
 
 # busuanzi(http://busuanzi.ibruce.info/) website statistics
 # 不蒜子(http://busuanzi.ibruce.info/) 网站统计
@@ -421,8 +422,10 @@ libs:
     matery: /css/matery.css
     mycss: /css/my.css
     fontAwesome: /libs/awesome/css/all.css # V5.11.1
-    materialize: /libs/materialize/materialize.min.css # 1.0.0
-    aos: /libs/aos/aos.css
+    #materialize: /libs/materialize/materialize.min.css # 1.0.0
+    materialize: https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css
+    # aos: /libs/aos/aos.css
+    aos: https://unpkg.com/aos@2.3.1/dist/aos.css
     animate: /libs/animate/animate.min.css # V3.5.1
     lightgallery: /libs/lightGallery/css/lightgallery.min.css # V1.6.11
     aplayer: /libs/aplayer/APlayer.min.css
@@ -434,9 +437,10 @@ libs:
   js:
     matery: /js/matery.js
     jquery: /libs/jquery/jquery.min.js
-    materialize: /libs/materialize/materialize.min.js # 1.0.0
+    # materialize: /libs/materialize/materialize.min.js # 1.0.0
+    materialize: https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js
     masonry: /libs/masonry/masonry.pkgd.min.js # v4.0.0
-    aos: /libs/aos/aos.js
+    aos: https://unpkg.com/aos@2.3.1/dist/aos.js
     scrollProgress: /libs/scrollprogress/scrollProgress.min.js
     lightgallery: /libs/lightGallery/js/lightgallery-all.min.js # V1.6.11
     clicklove: /libs/others/clicklove.js
@@ -471,18 +475,18 @@ featureImages:
 - /medias/featureimages/9.jpg
 - /medias/featureimages/10.jpg
 - /medias/featureimages/11.jpg
-- /medias/featureimages/12.jpg
-- /medias/featureimages/13.jpg
-- /medias/featureimages/14.jpg
-- /medias/featureimages/15.jpg
-- /medias/featureimages/16.jpg
-- /medias/featureimages/17.jpg
-- /medias/featureimages/18.jpg
-- /medias/featureimages/19.jpg
-- /medias/featureimages/20.jpg
-- /medias/featureimages/21.jpg
-- /medias/featureimages/22.jpg
-- /medias/featureimages/23.jpg
+# - /medias/featureimages/12.jpg
+# - /medias/featureimages/13.jpg
+# - /medias/featureimages/14.jpg
+# - /medias/featureimages/15.jpg
+# - /medias/featureimages/16.jpg
+# - /medias/featureimages/17.jpg
+# - /medias/featureimages/18.jpg
+# - /medias/featureimages/19.jpg
+# - /medias/featureimages/20.jpg
+# - /medias/featureimages/21.jpg
+# - /medias/featureimages/22.jpg
+# - /medias/featureimages/23.jpg
 
 # default configs that the default policy for every articles/posts
 # default 配置文章的默认转载规则
