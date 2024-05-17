@@ -387,8 +387,8 @@ githubLink:
 # 请注意：为了保证密码原文不会被泄露到网页中，文章的密码必须是通过'SHA256'加密的，这样就不会被破解.
 verifyPassword:
   enable: true
-  promptMessage: 请输入访问本文章的密码
-  errorMessage: 抱歉, 这个密码看着不太对, 请再试试.
+  promptMessage: 请输入访问本文章的密码哦！
+  errorMessage: 抱歉, 这个密码看着不太对, 请再试试呢.
   
 
 # busuanzi(http://busuanzi.ibruce.info/) website statistics
