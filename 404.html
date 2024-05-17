@@ -20,8 +20,8 @@
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
     <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
@@ -73,7 +73,7 @@
             $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')
         } else {
             document.body.classList.remove('DarkMode');
-            $('#sum-moon-icon').removeleClass("fa-sun").addClass('fa-moon')
+            $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')
         }
     </script>
 
@@ -396,7 +396,7 @@
 
 
     <script>
-        $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
+        $('.bg-cover').css('background-image', 'url(/medias/banner/0.webp)');
     </script>
 
 
@@ -683,10 +683,33 @@ $(function () {
     </a>
 </div>
 
+    <!-- <!-- <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                    
+                
+            </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <div class="description center-align">
+                
+                    
+                
+            </div> 
+        </div>
+    </div>
+</div> -->
+
+
+<script>
+    $('.bg-cover').css('background-image', 'url(/medias/banner/0.webp)');
+</script>
+
+ -->
+    <script src="/libs/materialize/materialize.min.js"></script>
     <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/libs/aos/aos.js"></script>
     <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
