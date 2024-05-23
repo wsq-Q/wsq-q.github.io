@@ -8,4 +8,4 @@ layout: "navi"
 
 [![网易云](/static/imgs/index/wangyi.png)](https://music.163.com/#/user/home?id=388241351)[![免费影视](https://img.souche.com/20240125/png/8ee5f4860d562955f3ef28bebf9f05a8.png)](https://www.freeok.vip/)[![36K导航](https://36kdh.com/wp-content/uploads/2022/06/35467567.png))](https://36kdh.com/)
 
-[![内网穿透](https://www.cpolar.com/wp-content/uploads/2018/11/normal-logo-2.png)](https://www.cpolar.com)[![Astar](/static/imgs/index/astar.png)](https://astarvpn.com/index.html)
+[![内网穿透](https://www.cpolar.com/wp-content/uploads/2018/11/normal-logo-2.png)](https://www.cpolar.com)[![Astar](/static/imgs/index/astar.png)](https://astarvpn.com/index.html)[![小笨壁纸](/static/imgs/index/xiaoben.jpg)](https://wallpaper.zhouxiaoben.info/)
