@@ -11,3 +11,5 @@ layout: "navi"
 [![内网穿透](https://www.cpolar.com/wp-content/uploads/2018/11/normal-logo-2.png)](https://www.cpolar.com)[![Astar](/static/imgs/index/astar.png)](https://astarvpn.com/index.html)[![小笨壁纸](/static/imgs/index/xiaoben.jpg)](https://wallpaper.zhouxiaoben.info/)
 
 [![PDF转换](https://static.pdfcandy.com/top-logo.svg)](https://pdfcandy.com/cn/)
+
+[![Pan666](/static/imgs/index/ali666.png)](https://pan666.cn/)
