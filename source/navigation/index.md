@@ -6,10 +6,14 @@ layout: "navi"
 ---
 [![GitHub](/static/imgs/index/github-mark.png)](https://github.com/wsq-Q/)[![CSDN](/static/imgs/index/default.jpg)](https://blog.csdn.net/qq_41033254)[![CHAT-GPT1](/static/imgs/index/icons8-chatgpt-250.png)](https://chat18.aichatos.xyz/#/chat/1715594659627)[![CHAT-GPT2](/static/imgs/index/微信图片_20240513191021.png)](https://pi.ai/onboarding)
 
-[![网易云](/static/imgs/index/wangyi.png)](https://music.163.com/#/user/home?id=388241351)[![免费影视](https://img.souche.com/20240125/png/8ee5f4860d562955f3ef28bebf9f05a8.png)](https://www.freeok.vip/)[![36K导航](https://36kdh.com/wp-content/uploads/2022/06/35467567.png)](https://36kdh.com/)
+[![网易云](/static/imgs/index/wangyi.png)](https://music.163.com/#/user/home?id=388241351)
+
+[![FREEOK影视](https://img.souche.com/20240125/png/8ee5f4860d562955f3ef28bebf9f05a8.png)](https://www.freeok.vip/)[![36K导航](https://36kdh.com/wp-content/uploads/2022/06/35467567.png)](https://36kdh.com/)
+
+[![NETFLIX影视](https://imgsrc.baidu.com/forum/pic/item/4a36acaf2edda3cc1e105d1947e93901213f9217.jpg)](https://netflixgc.com)
 
 [![内网穿透](https://www.cpolar.com/wp-content/uploads/2018/11/normal-logo-2.png)](https://www.cpolar.com)[![Astar](/static/imgs/index/astar.png)](https://astarvpn.com/index.html)[![小笨壁纸](/static/imgs/index/xiaoben.jpg)](https://wallpaper.zhouxiaoben.info/)
 
-[![PDF转换](https://static.pdfcandy.com/top-logo.svg)](https://pdfcandy.com/cn/)
+[![PDF转换](https://static.pdfcandy.com/top-logo.svg)](https://pdfcandy.com/cn/)[![Pan666](/static/imgs/index/ali666.png)](https://pan666.cn/)
 
-[![Pan666](/static/imgs/index/ali666.png)](https://pan666.cn/)
+
