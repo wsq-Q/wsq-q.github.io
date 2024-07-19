@@ -43,19 +43,25 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-syntax_highlighter: highlight.js
+
+# PrismJS 默认禁用。 启用 PrismJS 前应设置 highlight.enable 为 false（v7.0.0以下）
+# 或设置 syntax_highlighter 为 prismjs（v7.0.0及以上）。
+# syntax_highlighter: highlight.js
+syntax_highlighter: prismjs
 highlight:
   enable: false
-  line_number: false
+  line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
   enable: true
-  preprocess: true
-  line_number: true
+  preprocess: true #false是浏览器端，true是服务器端
+  line_number: false
+  line_threshold: 0
   tab_replace: ''
+
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
