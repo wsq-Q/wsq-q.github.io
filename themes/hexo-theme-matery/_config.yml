@@ -25,22 +25,39 @@ menu:
   "友链":
     url: /friends
     icon: fas fa-address-book
+  更多:
+   icon: fas fa-list
+   children:
+     - name: "菜谱"
+       url: "https://cook.wangshuaiqiang.chat/"
+       icon: fas fa-glass-cheers
+     - name: "音乐"
+       url: https://music.163.com/
+       icon: fas fa-music
+     - name: "影视"
+       url: https://www.freeok.vip/
+       icon: fas fa-film
+     - name: "书籍"
+       url: https://www.bookstack.cn/
+       icon: fas fa-book
+
   # 二级菜单写法如下
-  #Medias:
-  #  icon: fas fa-list
-  #  children:
-  #    - name: Musics
-  #      url: /musics
-  #      icon: fas fa-music
-  #    - name: Movies
-  #      url: /movies
-  #      icon: fas fa-film
-  #    - name: Books
-  #      url: /books
-  #      icon: fas fa-book
-  #    - name: Galleries
-  #      url: /galleries
-  #      icon: fas fa-image
+# menu:
+#   Medias:
+#    icon: fas fa-list
+#    children:
+#      - name: Musics
+#        url: /musics
+#        icon: fas fa-music
+#      - name: Movies
+#        url: /movies
+#        icon: fas fa-film
+#      - name: Books
+#        url: /books
+#        icon: fas fa-book
+#      - name: Galleries
+#        url: /galleries
+#        icon: fas fa-image
 
 # Website start time.
 # 站点运行开始时间.
