@@ -16,20 +16,38 @@ menu:
   "留言板":
     url: /contact
     icon: fas fa-comments
-  "导航":
-    url: /navigation
-    icon: fas fa-location-arrow
   "关于":
     url: /about
     icon: fas fa-user-circle
-  "友链":
-    url: /friends
-    icon: fas fa-address-book
+  AI:
+   icon: fas fa-glasses
+   children:
+     - name: 文心
+       url: https://yiyan.baidu.com/
+       icon: fas fa-atom
+     - name: 通义
+       url: https://tongyi.aliyun.com/qianwen/
+       icon: fas fa-biohazard
+     - name: 旋风
+       url: https://www.aixuanfeng.com/
+       icon: fas fa-shield-alt
+     - name: 免登
+       url: https://chat18.aichatos8.com/
+       icon: fas fa-comment
+     - name: Chat
+       url: https://chatgpt.com/
+       icon: fas fa-key
   更多:
    icon: fas fa-list
    children:
+     - name: 友链
+       url: /friends
+       icon: fas fa-address-book
+     - name: 导航
+       url: /navigation
+       icon: fas fa-location-arrow
      - name: "菜谱"
-       url: "https://cook.wangshuaiqiang.chat/"
+       url: https://cook.wangshuaiqiang.chat/
        icon: fas fa-glass-cheers
      - name: "音乐"
        url: https://music.163.com/
@@ -276,7 +294,12 @@ myGallery:
     - /medias/featureimages/0.jpg
     - /medias/featureimages/1.jpg
     - /medias/featureimages/2.jpg
-
+    - /medias/featureimages/3.jpg
+    - /medias/featureimages/4.jpg
+    - /medias/featureimages/5.jpg
+    - /medias/featureimages/6.jpg
+    - /medias/featureimages/7.jpg
+    - /medias/featureimages/8.jpg
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
 postCalendar: true
