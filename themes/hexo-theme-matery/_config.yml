@@ -27,9 +27,10 @@ menu:
        icon: fas fa-atom
      - name: 通义
        url: https://tongyi.aliyun.com/qianwen/
+       icon: fas fa-biohazard
      - name: 豆包
        url: https://www.doubao.com/chat/
-       icon: fas fa-biohazard
+       icon: fas fa-bullseye
      - name: 旋风
        url: https://www.aixuanfeng.com/
        icon: fas fa-shield-alt
