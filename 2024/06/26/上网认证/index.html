@@ -755,7 +755,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-08-02
+                    2024-08-28
                 </div>
                 
 
@@ -795,7 +795,7 @@
             <div id="articleContent">
                 <h3 id="1、每次重启电脑或者每天都会重定向到网络认证页面"><a href="#1、每次重启电脑或者每天都会重定向到网络认证页面" class="headerlink" title="1、每次重启电脑或者每天都会重定向到网络认证页面"></a>1、每次重启电脑或者每天都会重定向到网络认证页面</h3><pre class="language-none"><code class="language-none">http:&#x2F;&#x2F;1.1.1.3&#x2F;ac_portal&#x2F;disclaimer&#x2F;pc.html</code></pre>
 
-<h3 id=""><a href="#" class="headerlink" title=""></a><img src="/../static/imgs/%E4%B8%8A%E7%BD%91%E8%AE%A4%E8%AF%81/image-20240626094042221.png" alt="image-20240626094042221"></h3><h3 id="2、依赖安装"><a href="#2、依赖安装" class="headerlink" title="2、依赖安装"></a>2、依赖安装</h3><pre class="language-none"><code class="language-none">pip install requests -i https:&#x2F;&#x2F;pypi.doubanio.com&#x2F;simple</code></pre>
+<h3 id=""><a href="#" class="headerlink" title=""></a><img src="/../static/imgs/%E4%B8%8A%E7%BD%91%E8%AE%A4%E8%AF%81/image-20240626094042221.png" alt="上网认证截图"></h3><h3 id="2、依赖安装"><a href="#2、依赖安装" class="headerlink" title="2、依赖安装"></a>2、依赖安装</h3><pre class="language-none"><code class="language-none">pip install requests -i https:&#x2F;&#x2F;pypi.doubanio.com&#x2F;simple</code></pre>
 
 
 
@@ -812,12 +812,13 @@
 <span class="token keyword">import</span> json
 <span class="token keyword">import</span> os
 
+
 <span class="token comment"># 使cmd能够正确输出颜色</span>
 <span class="token keyword">if</span> os<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">"nt"</span><span class="token punctuation">:</span>
     os<span class="token punctuation">.</span>system<span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span>
 
-<span class="token comment"># 切换工作目录到系统临时文件区域</span>
-os<span class="token punctuation">.</span>chdir<span class="token punctuation">(</span>os<span class="token punctuation">.</span>getenv<span class="token punctuation">(</span><span class="token string">'TMP'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment"># 切换工作目录</span>
+os<span class="token punctuation">.</span>chdir<span class="token punctuation">(</span><span class="token string">"C:\\Windows"</span><span class="token punctuation">)</span>
 <span class="token comment"># 文件名称</span>
 file_name <span class="token operator">=</span> <span class="token string">"user_account.json"</span>
 <span class="token comment"># 如果不存在临时文件，根据输入新建临时文件保存账号密码</span>
@@ -929,7 +930,7 @@ headers <span class="token operator">=</span> <span class="token punctuation">&#
 
 
 <span class="token keyword">def</span> <span class="token function">ping_check</span><span class="token punctuation">(</span>ip_or_host<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    cmd <span class="token operator">=</span> <span class="token string">"ping %s -n 1 "</span> <span class="token operator">%</span> ip_or_host
+    cmd <span class="token operator">=</span> <span class="token string">"ping %s -n 3 "</span> <span class="token operator">%</span> ip_or_host
     a <span class="token operator">=</span> os<span class="token punctuation">.</span>popen<span class="token punctuation">(</span>cmd<span class="token punctuation">)</span>
     b <span class="token operator">=</span> a<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span>
     <span class="token comment">#print(b)</span>
@@ -944,22 +945,22 @@ headers <span class="token operator">=</span> <span class="token punctuation">&#
         <span class="token comment"># if res.status_code != 200:</span>
         <span class="token comment">#     auth_go()</span>
         res <span class="token operator">=</span> ping_check<span class="token punctuation">(</span><span class="token string">"1.2.4.8"</span><span class="token punctuation">)</span>
-        time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
+        time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
         <span class="token keyword">if</span> <span class="token keyword">not</span> res<span class="token punctuation">:</span>
             <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"检测到网络断开，尝试认证网络！"</span><span class="token punctuation">)</span>
             auth_go<span class="token punctuation">(</span><span class="token punctuation">)</span>
         <span class="token keyword">continue</span>
 main<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
 
-<h3 id="4、安装pyinstaller库，打包成exe程序，生产auth-net-exe"><a href="#4、安装pyinstaller库，打包成exe程序，生产auth-net-exe" class="headerlink" title="4、安装pyinstaller库，打包成exe程序，生产auth_net.exe"></a>4、安装pyinstaller库，打包成exe程序，生产auth_net.exe</h3><pre class="language-none"><code class="language-none">pip install pyinstaller
-pyinstaller -F aaaa.py
-#生成dist&#x2F;aaaa.exe</code></pre>
+<h3 id="4、安装pyinstaller库，打包成exe程序，将生成的auth-net-exe文件放入C-Windows目录"><a href="#4、安装pyinstaller库，打包成exe程序，将生成的auth-net-exe文件放入C-Windows目录" class="headerlink" title="4、安装pyinstaller库，打包成exe程序，将生成的auth_net.exe文件放入C:\Windows目录"></a>4、安装pyinstaller库，打包成exe程序，将生成的auth_net.exe文件放入C:\Windows目录</h3><pre class="language-none"><code class="language-none">pip install pyinstaller
+pyinstaller -F auth_net.py
+#生成dist&#x2F;auth_net.exe</code></pre>
 
 <p>首次运行需要输入用户名密码进行认证，因此需要手动打开程序输入</p>
-<p>后续脚本将账户信息保存到配置文件不需要再认证（除非删除Windows临时目录内的配置文件C:\Users\wsq\AppData\Local\Temp\user_account.json）</p>
-<h3 id="5、创建Windows任务计划程序"><a href="#5、创建Windows任务计划程序" class="headerlink" title="5、创建Windows任务计划程序"></a>5、创建Windows任务计划程序</h3><p><img src="/../static/imgs/%E4%B8%8A%E7%BD%91%E8%AE%A4%E8%AF%81/image-20240626094621278.png" alt="image-20240626094621278"></p>
-<p><img src="/../static/imgs/%E4%B8%8A%E7%BD%91%E8%AE%A4%E8%AF%81/image-20240626095237396.png" alt="image-20240626095237396"></p>
-<h3 id="6、程序运行结果，每次开机自启动"><a href="#6、程序运行结果，每次开机自启动" class="headerlink" title="6、程序运行结果，每次开机自启动"></a>6、程序运行结果，每次开机自启动</h3><p><img src="/../static/imgs/%E4%B8%8A%E7%BD%91%E8%AE%A4%E8%AF%81/image-20240626094514131.png" alt="image-20240626094514131"></p>
+<p>后续脚本将账户信息保存配置文件到C:\Windows目录，后续不需要再重新输入认证信息（除非删除WindowsC:\Windows目录的配置文件user_account.json）</p>
+<h3 id="5、创建Windows任务计划程序"><a href="#5、创建Windows任务计划程序" class="headerlink" title="5、创建Windows任务计划程序"></a>5、创建Windows任务计划程序</h3><p><img src="/../static/imgs/%E4%B8%8A%E7%BD%91%E8%AE%A4%E8%AF%81/image-20240626094621278.png" alt="打开任务计划程序"></p>
+<p><img src="/../static/imgs/%E4%B8%8A%E7%BD%91%E8%AE%A4%E8%AF%81/image-20240626095237396.png" alt="添加任务计划程序并运行"></p>
+<h3 id="6、程序运行结果，每次开机自启动"><a href="#6、程序运行结果，每次开机自启动" class="headerlink" title="6、程序运行结果，每次开机自启动"></a>6、程序运行结果，每次开机自启动</h3><p><img src="/../static/imgs/%E4%B8%8A%E7%BD%91%E8%AE%A4%E8%AF%81/image-20240626094514131.png" alt="任务管理器"></p>
 
                 
             </div>
@@ -1454,37 +1455,39 @@ pyinstaller -F aaaa.py
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2024/07/18/123/">
+                <a href="/2024/06/26/%E4%B8%8A%E7%BD%91%E8%AE%A4%E8%AF%81/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="123">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="深信服上网认证">
                         
-                        <span class="card-title">123</span>
+                        <span class="card-title">深信服上网认证</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            简介，这里修改
+                            
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-07-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            wsq-Q
+                            W SQ
                             
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
