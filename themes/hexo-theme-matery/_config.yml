@@ -61,7 +61,12 @@ menu:
      - name: "书籍"
        url: https://www.bookstack.cn/
        icon: fas fa-book
-
+     - name: "工具"
+       url: https://www.lzltool.cn/
+       icon: fas fa-tools
+     - name: "转换"
+       url: https://cdkm.com//
+       icon: fas fa-cogs
   # 二级菜单写法如下
 # menu:
 #   Medias:
