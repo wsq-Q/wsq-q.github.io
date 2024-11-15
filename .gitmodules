@@ -1,6 +1,4 @@
-[submodule "themes/themes/hexo-theme-matery1"]
-	path = themes/themes/hexo-theme-matery
-	url = https://github.com/blinkfox/hexo-theme-matery.git
 [submodule "themes/hexo-theme-matery"]
 	path = themes/hexo-theme-matery
-	url = https://github.com/blinkfox/hexo-theme-matery.git
+	url = https://github.com/wsq-Q/hexo-theme-matery.git
+                branch = main
