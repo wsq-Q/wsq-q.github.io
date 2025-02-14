@@ -34,12 +34,13 @@ menu:
      - name: 旋风
        url: https://www.aixuanfeng.com/
        icon: fas fa-shield-alt
-     - name: 免登
-       url: https://chat18.aichatos8.com/
+     - name: DEEPSEEK
+       url: https://chat.deepseek.com/
        icon: fas fa-comment
-     - name: Chat
+     - name: ChatGPT
        url: https://chatgpt.com/
        icon: fas fa-key
+       
   更多:
    icon: fas fa-list
    children:
