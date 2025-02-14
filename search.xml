@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>数据删除</title>
+      <link href="/2025/02/01/%E6%95%B0%E6%8D%AE%E5%88%A0%E9%99%A4/"/>
+      <url>/2025/02/01/%E6%95%B0%E6%8D%AE%E5%88%A0%E9%99%A4/</url>
+      
+        <content type="html"><![CDATA[<h5 id="简要描述"><a href="#简要描述" class="headerlink" title="简要描述"></a>简要描述</h5><ul><li>通过键值内容，统计匹配的数据并删除，每次删除10000条数据</li></ul><h5 id="请求URL"><a href="#请求URL" class="headerlink" title="请求URL"></a>请求URL</h5><ul><li><code>http://xx.com/del_data/</code></li></ul><h5 id="请求方式"><a href="#请求方式" class="headerlink" title="请求方式"></a>请求方式</h5><ul><li>GET</li></ul><h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><table><thead><tr><th align="left">参数名</th><th align="left">必选</th><th align="left">类型</th><th>说明</th></tr></thead><tbody><tr><td align="left">dtype</td><td align="left">是</td><td align="left">string</td><td>日志类型</td></tr><tr><td align="left">key</td><td align="left">是</td><td align="left">string</td><td>聚合关键字</td></tr><tr><td align="left">value</td><td align="left">是</td><td align="left">string</td><td>聚合关键值</td></tr><tr><td align="left">stime</td><td align="left">是</td><td align="left">string</td><td>起始时间例2025-01-11T00:00:00.971Z</td></tr><tr><td align="left">etime</td><td align="left">是</td><td align="left">string</td><td>结束时间</td></tr></tbody></table><h5 id="返回示例"><a href="#返回示例" class="headerlink" title="返回示例"></a>返回示例</h5><pre class="language-none"><code class="language-none">&#123;    &quot;del_num&quot;: 10000,    &quot;status&quot;: &quot;over&quot;,    &quot;time&quot;: &quot;Thu, 09 Jan 2025 15:17:52 GMT&quot;&#125;</code></pre><h5 id="返回参数说明"><a href="#返回参数说明" class="headerlink" title="返回参数说明"></a>返回参数说明</h5><table><thead><tr><th align="left">参数名</th><th align="left">类型</th><th>说明</th></tr></thead><tbody><tr><td align="left">groupid</td><td align="left">int</td><td>用户组id，1：超级管理员；2：普通用户</td></tr></tbody></table><h5 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h5><ul><li>更多返回错误代码请看首页的错误代码描述</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数据时间分布统计</title>
+      <link href="/2025/02/01/%E6%95%B0%E6%8D%AE%E6%97%B6%E9%97%B4%E5%88%86%E5%B8%83%E7%BB%9F%E8%AE%A1/"/>
+      <url>/2025/02/01/%E6%95%B0%E6%8D%AE%E6%97%B6%E9%97%B4%E5%88%86%E5%B8%83%E7%BB%9F%E8%AE%A1/</url>
+      
+        <content type="html"><![CDATA[<h5 id="简要描述"><a href="#简要描述" class="headerlink" title="简要描述"></a>简要描述</h5><ul><li>通过键值内容，统计匹配的数据日期分布情况</li></ul><h5 id="请求URL"><a href="#请求URL" class="headerlink" title="请求URL"></a>请求URL</h5><ul><li><code>http://xx.com/statistics/date/</code></li></ul><h5 id="请求方式"><a href="#请求方式" class="headerlink" title="请求方式"></a>请求方式</h5><ul><li>GET</li></ul><h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><table><thead><tr><th align="left">参数名</th><th align="left">必选</th><th align="left">类型</th><th>说明</th></tr></thead><tbody><tr><td align="left">dtype</td><td align="left">是</td><td align="left">string</td><td>日志类型</td></tr><tr><td align="left">key</td><td align="left">是</td><td align="left">string</td><td>聚合关键字</td></tr><tr><td align="left">value</td><td align="left">是</td><td align="left">string</td><td>聚合关键值</td></tr><tr><td align="left">stime</td><td align="left">是</td><td align="left">string</td><td>起始时间例2025-01-11T00:00:00.971Z</td></tr><tr><td align="left">etime</td><td align="left">是</td><td align="left">string</td><td>结束时间</td></tr></tbody></table><h5 id="返回示例"><a href="#返回示例" class="headerlink" title="返回示例"></a>返回示例</h5><pre class="language-none"><code class="language-none">[    &#123;        &quot;count&quot;: 102,        &quot;date&quot;: &quot;2025-01-07&quot;    &#125;,    &#123;        &quot;count&quot;: 121,        &quot;date&quot;: &quot;2025-01-08&quot;    &#125;]</code></pre><h5 id="返回参数说明"><a href="#返回参数说明" class="headerlink" title="返回参数说明"></a>返回参数说明</h5><table><thead><tr><th align="left">参数名</th><th align="left">类型</th><th>说明</th></tr></thead><tbody><tr><td align="left">groupid</td><td align="left">int</td><td>用户组id，1：超级管理员；2：普通用户</td></tr></tbody></table><h5 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h5><ul><li>更多返回错误代码请看首页的错误代码描述</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>日志检索</title>
+      <link href="/2025/02/01/%E6%97%A5%E5%BF%97%E6%A3%80%E7%B4%A2/"/>
+      <url>/2025/02/01/%E6%97%A5%E5%BF%97%E6%A3%80%E7%B4%A2/</url>
+      
+        <content type="html"><![CDATA[<h5 id="简要描述"><a href="#简要描述" class="headerlink" title="简要描述"></a>简要描述</h5><ul><li>日志检索</li></ul><h5 id="请求URL"><a href="#请求URL" class="headerlink" title="请求URL"></a>请求URL</h5><ul><li><code>http://xx.com/search/</code></li></ul><h5 id="请求方式"><a href="#请求方式" class="headerlink" title="请求方式"></a>请求方式</h5><ul><li>GET</li></ul><h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><table><thead><tr><th align="left">参数名</th><th align="left">必选</th><th align="left">类型</th><th>说明</th></tr></thead><tbody><tr><td align="left">dtype</td><td align="left">是</td><td align="left">string</td><td>日志类型</td></tr><tr><td align="left">stime</td><td align="left">是</td><td align="left">string</td><td>起始时间例2025-01-11T00:00:00.971Z</td></tr><tr><td align="left">etime</td><td align="left">是</td><td align="left">string</td><td>结束时间</td></tr><tr><td align="left">sip</td><td align="left">否</td><td align="left">string</td><td>源ip检索</td></tr><tr><td align="left">dip</td><td align="left">否</td><td align="left">string</td><td>目标ip检索</td></tr><tr><td align="left">page</td><td align="left">是</td><td align="left">string</td><td>页码</td></tr><tr><td align="left">limit</td><td align="left">是</td><td align="left">string</td><td>条数</td></tr></tbody></table><h5 id="返回示例"><a href="#返回示例" class="headerlink" title="返回示例"></a>返回示例</h5><pre class="language-none"><code class="language-none"> &#123;    &quot;data&quot;: [        &#123;            &quot;_id&quot;: &quot;AZRJHDKvaQJO78oCbm29&quot;,            &quot;_index&quot;: &quot;original-attack2-2025.01.09&quot;,            &quot;_score&quot;: null,            &quot;_source&quot;: &#123;                &quot;@timestamp&quot;: &quot;2025-01-09T03:29:32.131Z&quot;,                &quot;@version&quot;: &quot;1&quot;,                &quot;Action&quot;: &quot;PERMIT&quot;,                &quot;Content&quot;: &quot;POLICY*: The packet was through because the firewall policy is permit&quot;,                &quot;DIP&quot;: &quot;10.21.4.1&quot;,                &quot;DstIP&quot;: &quot;10.21.4.1&quot;,                &quot;FwPolicyID&quot;: &quot;1&quot;,                &quot;GenTime&quot;: &quot;2025-01-09 11:28:14&quot;,                &quot;InInterface&quot;: &quot;ge0&#x2F;0&quot;,                &quot;OutInterface&quot;: &quot;ge0&#x2F;1&quot;,                &quot;Protocol&quot;: &quot;ICMP&quot;,                &quot;SIP&quot;: &quot;10.21.4.206&quot;,                &quot;SerialNum&quot;: &quot;101Y3-15A5O-1F001-1F223-YLS1K&quot;,                &quot;SrcIP&quot;: &quot;10.21.4.206&quot;,                &quot;code&quot;: &quot;0&quot;,                &quot;geoip&quot;: &#123;&#125;,                &quot;host&quot;: &quot;10.21.4.161&quot;,                &quot;logsource&quot;: &quot;host&quot;,                &quot;program&quot;: &quot;FILTER&quot;,                &quot;severity&quot;: &quot;6&quot;,                &quot;severity_label&quot;: &quot;info&quot;,                &quot;tags&quot;: [                    &quot;_geoip_lookup_failure&quot;                ],                &quot;timestamp&quot;: &quot;Jan  9 11:28:14&quot;,                &quot;type&quot;: &quot;8&quot;            &#125;,            &quot;_type&quot;: &quot;8&quot;,            &quot;sort&quot;: [                1736393372131            ]        &#125;    ],    &quot;limit&quot;: &quot;1&quot;,    &quot;page&quot;: &quot;1&quot;,    &quot;total&quot;: 54&#125;</code></pre><h5 id="返回参数说明"><a href="#返回参数说明" class="headerlink" title="返回参数说明"></a>返回参数说明</h5><table><thead><tr><th align="left">参数名</th><th align="left">类型</th><th>说明</th></tr></thead><tbody><tr><td align="left">groupid</td><td align="left">int</td><td>用户组id，1：超级管理员；2：普通用户</td></tr></tbody></table><h5 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h5><ul><li>更多返回错误代码请看首页的错误代码描述</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>日志类型统计</title>
+      <link href="/2025/02/01/%E6%97%A5%E5%BF%97%E7%B1%BB%E5%9E%8B%E7%BB%9F%E8%AE%A1/"/>
+      <url>/2025/02/01/%E6%97%A5%E5%BF%97%E7%B1%BB%E5%9E%8B%E7%BB%9F%E8%AE%A1/</url>
+      
+        <content type="html"><![CDATA[<h5 id="简要描述"><a href="#简要描述" class="headerlink" title="简要描述"></a>简要描述</h5><ul><li>日志类型统计，统计一定时间范围内，每个类型日志的数量</li></ul><h5 id="请求URL"><a href="#请求URL" class="headerlink" title="请求URL"></a>请求URL</h5><ul><li><code>http://xx.com/statistics/key/</code></li></ul><h5 id="请求方式"><a href="#请求方式" class="headerlink" title="请求方式"></a>请求方式</h5><ul><li>GET</li></ul><h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><table><thead><tr><th align="left">参数名</th><th align="left">必选</th><th align="left">类型</th><th>说明</th></tr></thead><tbody><tr><td align="left">dtype</td><td align="left">否</td><td align="left">string</td><td>日志类型</td></tr><tr><td align="left">key</td><td align="left">否</td><td align="left">string</td><td>按照该关键字统计</td></tr><tr><td align="left">stime</td><td align="left">是</td><td align="left">string</td><td>起始时间例2025-01-11T00:00:00.971Z</td></tr><tr><td align="left">etime</td><td align="left">是</td><td align="left">string</td><td>结束时间</td></tr></tbody></table><h5 id="返回示例"><a href="#返回示例" class="headerlink" title="返回示例"></a>返回示例</h5><pre class="language-none"><code class="language-none">[    &#123;        &quot;count&quot;: 1067556,        &quot;name&quot;: &quot;FILTER&quot;    &#125;,    &#123;        &quot;count&quot;: 711418,        &quot;name&quot;: &quot;APP_POLICY&quot;    &#125;,    &#123;        &quot;count&quot;: 30734,        &quot;name&quot;: &quot;WEB_ACCESS&quot;    &#125;,    &#123;        &quot;count&quot;: 17971,        &quot;name&quot;: &quot;SYSTEM_INFO&quot;    &#125;,    &#123;        &quot;count&quot;: 255,        &quot;name&quot;: &quot;CONFIG&quot;    &#125;,    &#123;        &quot;count&quot;: 200,        &quot;name&quot;: &quot;WEB_VISITED&quot;    &#125;,    &#123;        &quot;count&quot;: 107,        &quot;name&quot;: &quot;APP_TRAFFIC&quot;    &#125;,    &#123;        &quot;count&quot;: 63,        &quot;name&quot;: &quot;APP_CATEG&quot;    &#125;,    &#123;        &quot;count&quot;: 62,        &quot;name&quot;: &quot;FLOOD&quot;    &#125;,    &#123;        &quot;count&quot;: 48,        &quot;name&quot;: &quot;INTRUSION_ATTACK&quot;    &#125;]</code></pre><h5 id="返回参数说明"><a href="#返回参数说明" class="headerlink" title="返回参数说明"></a>返回参数说明</h5><table><thead><tr><th align="left">参数名</th><th align="left">类型</th><th>说明</th></tr></thead><tbody><tr><td align="left">groupid</td><td align="left">int</td><td>用户组id，1：超级管理员；2：普通用户</td></tr></tbody></table><h5 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h5><ul><li>更多返回错误代码请看首页的错误代码描述</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>深信服上网认证</title>
       <link href="/2024/06/26/%E4%B8%8A%E7%BD%91%E8%AE%A4%E8%AF%81/"/>
       <url>/2024/06/26/%E4%B8%8A%E7%BD%91%E8%AE%A4%E8%AF%81/</url>

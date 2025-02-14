@@ -6,7 +6,7 @@
   <link href="https://wangshuaiqiang.chat/atom.xml" rel="self"/>
   
   <link href="https://wangshuaiqiang.chat/"/>
-  <updated>2025-02-14T02:50:10.034Z</updated>
+  <updated>2025-02-14T02:54:40.958Z</updated>
   <id>https://wangshuaiqiang.chat/</id>
   
   <author>
@@ -17,11 +17,107 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>数据删除</title>
+    <link href="https://wangshuaiqiang.chat/2025/02/01/%E6%95%B0%E6%8D%AE%E5%88%A0%E9%99%A4/"/>
+    <id>https://wangshuaiqiang.chat/2025/02/01/%E6%95%B0%E6%8D%AE%E5%88%A0%E9%99%A4/</id>
+    <published>2025-02-01T01:22:25.000Z</published>
+    <updated>2025-02-14T02:54:40.958Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h5 id=&quot;简要描述&quot;&gt;&lt;a href=&quot;#简要描述&quot; class=&quot;headerlink&quot; title=&quot;简要描述&quot;&gt;&lt;/a&gt;简要描述&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;通过键值内容，统计匹配的数据并删除，每次删除10000条数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数据时间分布统计</title>
+    <link href="https://wangshuaiqiang.chat/2025/02/01/%E6%95%B0%E6%8D%AE%E6%97%B6%E9%97%B4%E5%88%86%E5%B8%83%E7%BB%9F%E8%AE%A1/"/>
+    <id>https://wangshuaiqiang.chat/2025/02/01/%E6%95%B0%E6%8D%AE%E6%97%B6%E9%97%B4%E5%88%86%E5%B8%83%E7%BB%9F%E8%AE%A1/</id>
+    <published>2025-02-01T01:22:25.000Z</published>
+    <updated>2025-02-14T02:54:40.958Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h5 id=&quot;简要描述&quot;&gt;&lt;a href=&quot;#简要描述&quot; class=&quot;headerlink&quot; title=&quot;简要描述&quot;&gt;&lt;/a&gt;简要描述&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;通过键值内容，统计匹配的数据日期分布情况&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;请求URL&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>日志检索</title>
+    <link href="https://wangshuaiqiang.chat/2025/02/01/%E6%97%A5%E5%BF%97%E6%A3%80%E7%B4%A2/"/>
+    <id>https://wangshuaiqiang.chat/2025/02/01/%E6%97%A5%E5%BF%97%E6%A3%80%E7%B4%A2/</id>
+    <published>2025-02-01T01:22:25.000Z</published>
+    <updated>2025-02-14T02:54:40.958Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h5 id=&quot;简要描述&quot;&gt;&lt;a href=&quot;#简要描述&quot; class=&quot;headerlink&quot; title=&quot;简要描述&quot;&gt;&lt;/a&gt;简要描述&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;日志检索&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;请求URL&quot;&gt;&lt;a href=&quot;#请求URL&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>日志类型统计</title>
+    <link href="https://wangshuaiqiang.chat/2025/02/01/%E6%97%A5%E5%BF%97%E7%B1%BB%E5%9E%8B%E7%BB%9F%E8%AE%A1/"/>
+    <id>https://wangshuaiqiang.chat/2025/02/01/%E6%97%A5%E5%BF%97%E7%B1%BB%E5%9E%8B%E7%BB%9F%E8%AE%A1/</id>
+    <published>2025-02-01T01:22:25.000Z</published>
+    <updated>2025-02-14T02:54:40.958Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h5 id=&quot;简要描述&quot;&gt;&lt;a href=&quot;#简要描述&quot; class=&quot;headerlink&quot; title=&quot;简要描述&quot;&gt;&lt;/a&gt;简要描述&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;日志类型统计，统计一定时间范围内，每个类型日志的数量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;请求URL&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>深信服上网认证</title>
     <link href="https://wangshuaiqiang.chat/2024/06/26/%E4%B8%8A%E7%BD%91%E8%AE%A4%E8%AF%81/"/>
     <id>https://wangshuaiqiang.chat/2024/06/26/%E4%B8%8A%E7%BD%91%E8%AE%A4%E8%AF%81/</id>
     <published>2024-06-26T01:22:25.000Z</published>
-    <updated>2025-02-14T02:50:10.034Z</updated>
+    <updated>2025-02-14T02:54:40.958Z</updated>
     
     
       
