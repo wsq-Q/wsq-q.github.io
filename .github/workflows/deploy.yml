@@ -35,7 +35,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: public    # source部署目录
           publish_branch: deploy # 目标部署分支  
-          cname: wangshuaiqiang.chat
+          #cname: wangshuaiqiang.chat
 
       #- name: Setup Deploy Private Key #部署git hexo私钥到构建容器中
       #  env:

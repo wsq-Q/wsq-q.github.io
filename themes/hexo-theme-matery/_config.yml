@@ -4,6 +4,9 @@ menu:
   "首页":
     url: /
     icon: fas fa-home
+  "便签":
+    url: /notepad
+    icon: fas fa-tags
   "标签":
     url: /tags
     icon: fas fa-tags
